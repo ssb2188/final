@@ -20,6 +20,10 @@ def hello():
 def clippage():
     return render_template("clips.html")
 
+@app.route("/memory")
+def memorypage():
+    return render_template("memory.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
