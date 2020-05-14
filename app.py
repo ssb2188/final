@@ -16,6 +16,10 @@ app = Flask(__name__)
 def hello():
     return render_template("index.html")
 
+@app.route("/clips")
+def clippage():
+    return render_template("clips.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
